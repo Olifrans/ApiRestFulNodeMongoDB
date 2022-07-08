@@ -1,5 +1,6 @@
 //config
 const express = require("express");
+const mongoose = require("mongoose");
 const app = express();
 
 //ler json / middlewares
@@ -13,11 +14,7 @@ app.use(express.json());
 
 //retas endpoint
 app.get("/", (req, res) => {
-    //mostr
+  //mostr
 
-    res.json({message: 'Oi NodeJs'})
-
+  res.json({ message: "Oi NodeJs" });
 });
-
-// porta de entrega
-app.listen(3000);
